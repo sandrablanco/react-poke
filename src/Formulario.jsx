@@ -122,14 +122,13 @@ function Formulario () {
 
       {pokemon && (
         <div>
-          <h2>{pokemon.name}</h2>
-
+          <h2>{pokemon.id} - {pokemon.name}</h2>
+          <h3>{pokemon.description}</h3>
           <img
             src={pokemon.sprites.other["official-artwork"].front_default}
             alt={pokemon.name}
             width="150"
           />
-
           <p>Altura: {pokemon.height}</p>
           <p>Peso: {pokemon.weight}</p>
 
